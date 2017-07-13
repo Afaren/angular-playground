@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-export class Hero {
+export class Pirate {
   id: number;
   name: string;
  }
@@ -13,9 +13,9 @@ export class Hero {
 })
 
 export class AppComponent {
-  title = 'Tour of Heroes';
-  hero: Hero = {
+  title = 'Straw Hat Pirates';
+  pirate: Pirate = {
     id: 1,
-    name: 'Windstorm'
+    name: 'Monkey D. Luffy'
   };
 }
