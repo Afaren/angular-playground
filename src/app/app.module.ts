@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { PirateDetailComponent } from './pirate-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PirateDetailComponent
   ],
   imports: [
     BrowserModule,

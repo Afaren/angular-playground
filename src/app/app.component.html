@@ -8,11 +8,4 @@
         <span class="badge" > {{pirate.id}} </span> {{pirate.name}}
     </li>
 </ul>
-<div *ngIf="selectedPirate">
-    <h2>{{selectedPirate.name}} details! </h2>
-    <div><label>id: </label>{{selectedPirate.id}}</div>
-    <div>
-        <label>name: </label>
-        <input [(ngModel)]='selectedPirate.name' placeholder="name">
-    </div>
-</div>
+<pirate-detail [pirate]="selectedPirate"></pirate-detail>

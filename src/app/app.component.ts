@@ -1,10 +1,5 @@
 import { Component } from '@angular/core';
-
-export class Pirate {
-  id: number;
-  name: string;
-}
-
+import { Pirate } from './pirate';
 
 const PIRATES:  Pirate[] = [
   { id: 1, 	name: 'Monkey D. Luffy' },
