@@ -6,7 +6,7 @@ h1 {
 
 .selected {
     background-color: #CFD8DC !important;
-    color: white;
+    color: red;
 }
 .pirates {
     margin: 0 0 2em 0;
