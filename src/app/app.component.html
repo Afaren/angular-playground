@@ -1,13 +1,16 @@
 <h1>{{title}}</h1>
 <h2>Straw Hat Pirates</h2>
 <ul class="pirates">
-    <li *ngFor="let pirate of pirates">
+    <li *ngFor="let pirate of pirates"
+        (click)="onSelect(pirate)">
         <span class="badge" > {{pirate.id}} </span> {{pirate.name}}
     </li>
 </ul>
-<h2>{{pirate.name}} details! </h2>
-<div><label>id: </label>{{pirate.id}}</div>
-<div>
-    <label>name: </label>
-    <input [(ngModel)]='pirate.name' placeholder="name">
+<div *ngIf="selectedPirate">
+    <h2>{{selectedPirate.name}} details! </h2>
+    <div><label>id: </label>{{selectedPirate.id}}</div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]='selectedPirate.name' placeholder="name">
+    </div>
 </div>

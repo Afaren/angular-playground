@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 export class Pirate {
   id: number;
   name: string;
- }
+}
 
 
 const PIRATES:  Pirate[] = [
@@ -28,8 +28,9 @@ const PIRATES:  Pirate[] = [
 export class AppComponent {
   pirates = PIRATES;
   title = 'Straw Hat Pirates';
-  pirate: Pirate = {
-    id: 1,
-    name: 'Monkey D. Luffy'
-  };
+  selectedPirate: Pirate;
+
+  onSelect(pirate: Pirate): void {
+    this.selectedPirate = pirate;
+  }
 }
