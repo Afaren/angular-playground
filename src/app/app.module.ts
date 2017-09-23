@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PirateDetailComponent } from './pirate-detail.component';
+import {PirateService} from './pirate.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { PirateDetailComponent } from './pirate-detail.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [PirateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
