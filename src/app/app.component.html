@@ -1,11 +1,2 @@
 <h1>{{title}}</h1>
-<h2>Straw Hat Pirates</h2>
-<ul class="pirates">
-    <li *ngFor="let pirate of pirates"
-        [class.selected]="pirate === selectedPirate"
-        (click)="onSelect(pirate)">
-        
-        <span class="badge" > {{pirate.id}} </span> {{pirate.name}}
-    </li>
-</ul>
-<pirate-detail [pirate]="selectedPirate"></pirate-detail>
+<app-pirate></app-pirate>

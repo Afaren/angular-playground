@@ -1,30 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import {Pirate} from './pirate';
-import {PirateService} from './pirate.service';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 
-export class AppComponent implements OnInit {
-  pirates: Pirate[];
-  title = 'Straw Hat Pirates';
-  selectedPirate: Pirate;
-
-  constructor(private pirateService: PirateService) {
-  }
-
-  ngOnInit(): void {
-    this.getPirates();
-  }
-
-  getPirates(): void {
-    this.pirateService.getPirates().then(pirates => this.pirates = pirates);
-  }
-
-  onSelect(pirate: Pirate): void {
-    this.selectedPirate = pirate;
-  }
+export class AppComponent {
+  title = 'Tour of Pirates';
 }
