@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   getPirates(): void {
-    this.pirates = this.pirateService.getPirate();
+    this.pirateService.getPirates().then(pirates => this.pirates = pirates);
   }
 
   onSelect(pirate: Pirate): void {

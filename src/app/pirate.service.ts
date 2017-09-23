@@ -5,8 +5,8 @@ import { PIRATES } from './mock-pirates';
 
 @Injectable()
 export class PirateService {
-  getPirate(): Pirate[] {
-    return PIRATES;
+  getPirates(): Promise<Pirate[]> {
+    return Promise.resolve(PIRATES);
   }
 }
 
