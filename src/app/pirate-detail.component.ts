@@ -7,7 +7,8 @@ import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'app-pirate-detail',
-  templateUrl: './pirate-detail.component.html'
+  templateUrl: './pirate-detail.component.html',
+  styleUrls: ['./pirate-detail.component.css'],
 })
 
 
