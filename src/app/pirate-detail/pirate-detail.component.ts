@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Pirate} from './pirate';
-import {PirateService} from './pirate.service';
+import {Pirate} from '../pirate/pirate';
+import {PirateService} from '../pirate/service/pirate.service';
 import {ActivatedRoute, ParamMap} from '@angular/router';
 import {Location} from '@angular/common';
 import 'rxjs/add/operator/switchMap';

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {PirateService} from './pirate.service';
-import {Pirate} from './pirate';
+import {PirateService} from '../pirate/service/pirate.service';
+import {Pirate} from '../pirate/pirate';
 
 @Component({
   selector: 'app-dashboard',

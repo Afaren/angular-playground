@@ -1,7 +1,7 @@
 import {RouterModule} from '@angular/router';
-import {PirateComponent} from './pirate.component';
-import {DashboardComponent} from './dashboard.component';
-import {PirateDetailComponent} from './pirate-detail.component';
+import {PirateComponent} from '../pirate/pirate.component';
+import {DashboardComponent} from '../dashboard/dashboard.component';
+import {PirateDetailComponent} from '../pirate-detail/pirate-detail.component';
 import {NgModule} from '@angular/core';
 
 const routes = [

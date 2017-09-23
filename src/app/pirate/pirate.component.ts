@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Pirate} from './pirate';
-import {PirateService} from './pirate.service';
+import {PirateService} from './service/pirate.service';
 import {Router} from '@angular/router';
 
 @Component({

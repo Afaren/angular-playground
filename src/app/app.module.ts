@@ -3,11 +3,11 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
-import {PirateDetailComponent} from './pirate-detail.component';
-import {PirateService} from './pirate.service';
-import {PirateComponent} from './pirate.component';
-import {DashboardComponent} from './dashboard.component';
-import {AppRoutingModule} from './app.routing.module';
+import {PirateDetailComponent} from './pirate-detail/pirate-detail.component';
+import {PirateService} from './pirate/service/pirate.service';
+import {PirateComponent} from './pirate/pirate.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {AppRoutingModule} from './router/app.routing.module';
 
 @NgModule({
   declarations: [
