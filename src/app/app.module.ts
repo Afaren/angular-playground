@@ -6,16 +6,20 @@ import {AppComponent} from './app.component';
 import {PirateDetailComponent} from './pirate-detail.component';
 import {PirateService} from './pirate.service';
 import {PirateComponent} from './pirate.component';
+import {DashboardComponent} from './dashboard.component';
+import {AppRoutingModule} from './app.routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     PirateComponent,
+    DashboardComponent,
     PirateDetailComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [PirateService],
   bootstrap: [AppComponent]

@@ -1,8 +1,11 @@
 <div *ngIf="pirate">
-    <h2>{{pirate.name}} details! </h2>
-    <div><label>id: </label>{{pirate.id}}</div>
-    <div>
-        <label>name: </label>
-        <input [(ngModel)]='pirate.name' placeholder="name">
-    </div>
+  <h2>{{pirate.name}} details! </h2>
+  <div><label>id: </label>{{pirate.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]='pirate.name' placeholder="name">
+  </div>
+  <button (click)="goBack()">Back</button>
 </div>
+
+

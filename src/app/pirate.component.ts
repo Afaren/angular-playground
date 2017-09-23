@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Pirate} from './pirate';
 import {PirateService} from './pirate.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-pirate',
@@ -13,18 +14,23 @@ export class PirateComponent implements OnInit {
   title = 'Straw Hat Pirates';
   selectedPirate: Pirate;
 
-  constructor(private pirateService: PirateService) {
+  constructor(private pirateService: PirateService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
     this.getPirates();
   }
 
+  onSelect(pirate: Pirate): void {
+    this.selectedPirate = pirate;
+  }
+
   getPirates(): void {
     this.pirateService.getPirates().then(pirates => this.pirates = pirates);
   }
 
-  onSelect(pirate: Pirate): void {
-    this.selectedPirate = pirate;
+  gotoDetail() {
+    this.router.navigate(['/pirates', this.selectedPirate.id]);
   }
 }

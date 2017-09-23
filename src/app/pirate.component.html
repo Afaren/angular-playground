@@ -1,11 +1,15 @@
-<h1>{{title}}</h1>
-<h2>Straw Hat Pirates</h2>
+<h2>{{title}}</h2>
 <ul class="pirates">
-    <li *ngFor="let pirate of pirates"
-        [class.selected]="pirate === selectedPirate"
-        (click)="onSelect(pirate)">
-        
-        <span class="badge" > {{pirate.id}} </span> {{pirate.name}}
-    </li>
+  <li *ngFor="let pirate of pirates"
+      [class.selected]="pirate === selectedPirate"
+      (click)="onSelect(pirate)">
+
+    <span class="badge"> {{pirate.id}} </span> {{pirate.name}}
+  </li>
 </ul>
-<pirate-detail [pirate]="selectedPirate"></pirate-detail>
+<div *ngIf="selectedPirate">
+  <h2>
+    {{selectedPirate.name | uppercase}} is my Pirate
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
